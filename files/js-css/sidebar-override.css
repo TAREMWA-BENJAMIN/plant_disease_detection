@@ -1,0 +1,24 @@
+nav.sidebar {
+  background-color: #f0faf2 !important;
+}
+
+nav.navbar {
+  background: #fff !important;
+  position: relative !important;
+  z-index: 1050 !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  border-bottom: 3px solid #0047FF !important;
+}
+
+nav.navbar::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  border-bottom: 1px solid #0047FF;
+}
+
+.navbar-content {
+  border-bottom: none !important;
+} 
