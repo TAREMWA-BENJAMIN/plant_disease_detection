@@ -81,8 +81,13 @@ class FarmingResource extends Model
      */
     public function getFileUrlAttribute()
     {
-        return Storage::url($this->file_path);
+        if (!$this->file_path) {
+            return null;
+        }
+        
+        return url('files/images/farming_resources/' . $this->file_path);
     }
+
 
     /**
      * Get the thumbnail URL
